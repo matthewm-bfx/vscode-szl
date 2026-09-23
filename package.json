@@ -1,0 +1,31 @@
+{
+    "name": "sizzle",
+    "displayName": "Sizzle",
+    "description": "Syntax highlighting for SynthEyes Sizzle (.szl) scripts",
+    "version": "0.1.0",
+    "publisher": "borisfx",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "sizzle",
+                "aliases": ["Sizzle", "szl"],
+                "extensions": [".szl"],
+                "firstLine": "^//SIZZLE[ITX]\\b",
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "sizzle",
+                "scopeName": "source.szl",
+                "path": "./syntaxes/sizzle.tmLanguage.json"
+            }
+        ]
+    }
+}
